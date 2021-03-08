@@ -1,0 +1,62 @@
+$md: 710px;
+// $lg: 1920px;
+$lg: 1110px;
+
+//iPad用
+@mixin md {
+    @media (min-width: $md) {
+        @content;
+    }
+}
+
+//PC用
+@mixin lg {
+    @media (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin en {
+    border: solid 2px white;
+    float: right;
+    padding: 3px;
+    margin: 50px;
+    text-decoration: none;
+  }
+
+@mixin h2 {
+    padding-top: 200px;
+    padding-left: 5%;
+    font-size: 36px;
+}
+
+@mixin card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 80%;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 100px auto 100px;
+    box-shadow: 5px 5px grey;
+    text-align: center;
+}
+
+@mixin h3 {
+      color: black;
+      padding-bottom: 50px;
+}
+
+@mixin icon {
+    width: 250px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+@mixin li {
+      color: black;
+      line-height: 60px;
+      text-align: left;
+      padding-left: 7%;
+      padding-right: 7%;
+}
+

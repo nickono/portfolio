@@ -1,0 +1,439 @@
+@charset "UTF-8";
+body * {
+  font-family: "Rooney Sans";
+  font-family: "平成丸ゴシック Std";
+  font-family: sans-serif;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("bgd_img.png");
+  background-repeat: repeat;
+}
+
+body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #222;
+  background-image: repeating-linear-gradient(to bottom, transparent 7px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 13px, transparent 13px);
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    /*     color: #fccaff;
+          text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+            0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    /*     color: #fccaff;
+          text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+            0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+body header .en {
+  border: solid 2px white;
+  float: right;
+  padding: 3px;
+  margin: 50px;
+  text-decoration: none;
+}
+
+body header .jp {
+  border: solid 2px white;
+  float: right;
+  padding: 3px;
+  margin: 50px;
+  text-decoration: none;
+}
+
+body header .welcome {
+  padding-top: 100px;
+  font-size: calc(8vh);
+  line-height: calc(10px + 10vh);
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+              color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "beon";
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+body header h1 {
+  font-size: 40px;
+  padding-top: 100px;
+  font-size: calc(10px + 8vh);
+  line-height: calc(10px + 10vh);
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+                0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+              color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "beon";
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+body h2 {
+  padding-top: 200px;
+  padding-left: 5%;
+  font-size: 36px;
+}
+
+body .card01 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto 100px;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
+  text-align: center;
+}
+
+body .card01 h3 {
+  color: black;
+  padding-bottom: 50px;
+}
+
+body .card01 .icon {
+  width: 250px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+body .card01 ul {
+  text-align: left;
+}
+
+body .card01 ul li {
+  color: black;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 3%;
+}
+
+body .card02 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto 100px;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
+  text-align: center;
+}
+
+body .card02 h3 {
+  color: black;
+  padding-bottom: 50px;
+}
+
+body .card02 .icon {
+  width: 250px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+body .card02 ul {
+  text-align: left;
+}
+
+body .card02 ul li {
+  color: black;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 3%;
+}
+
+body .card03 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto 100px;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
+  text-align: center;
+}
+
+body .card03 h3 {
+  color: black;
+  padding-bottom: 50px;
+}
+
+body .card03 .icon {
+  width: 250px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+body .card03 ul {
+  text-align: left;
+}
+
+body .card03 ul li {
+  color: black;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 3%;
+}
+
+body .card04 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto 100px;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
+  text-align: center;
+}
+
+body .card04 .profile {
+  color: black;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 100px;
+}
+
+body .card04 ul li {
+  color: black;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: center;
+  line-height: 100px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body .card04 ul .icon_sm {
+  width: 100px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+body .card04 ul .html5 {
+  padding-bottom: 0;
+}
+
+body .card04 ul .attribution {
+  color: black;
+}
+
+body .card05 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto 100px;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
+  text-align: center;
+  background-image: url("bgd_img.png");
+  background-repeat: repeat;
+  padding-bottom: 150px;
+}
+
+body .card05 .frame {
+  width: 90%;
+  padding-top: 100px;
+}
+
+body .card05 .plate {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  width: 60%;
+}
+
+body .card05 .last {
+  padding-bottom: 0;
+}
+
+body .affili {
+  text-align: center;
+}
+
+body .affili .affiliation01 {
+  width: 50%;
+  padding-top: 200px;
+}
+
+body .affili .affiliation {
+  width: 80%;
+  padding-top: 200px;
+}
+
+body .card06 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 100px auto 100px;
+  -webkit-box-shadow: 5px 5px grey;
+          box-shadow: 5px 5px grey;
+  text-align: center;
+}
+
+body .card06 h3 {
+  color: black;
+  padding-bottom: 50px;
+}
+
+body .card06 dl {
+  background-color: lightgray;
+  margin: 100px 10% 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body .card06 dl dt, body .card06 dl dd {
+  color: black;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+body .form {
+  text-align: center;
+}
+
+body .google_form {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  width: 90%;
+}
+
+@media (min-width: 1110px) {
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .card01 {
+    margin-top: 100px;
+    margin-right: 0;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+  body .card01 ul li {
+    font-size: 18px;
+  }
+  body .card02 {
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 100;
+    margin-left: 50px;
+    padding-bottom: 0;
+  }
+  body .card02 ul li {
+    font-size: 18px;
+  }
+  body .card03 {
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 0;
+  }
+  body .card03 ul li {
+    font-size: 18px;
+    list-style: disc;
+  }
+  body .card06 dl {
+    width: 50%;
+    margin: 0;
+  }
+  body .card06 .design {
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+  body .card06 .cording {
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+footer .page_top {
+  width: 100px;
+  padding-bottom: 150px;
+}
+
+footer .thankyou {
+  padding-bottom: 200px;
+  font-size: calc(8vh);
+  line-height: calc(10px + 10vh);
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+          0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+        color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "beon";
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+/*# sourceMappingURL=style.css.map */
