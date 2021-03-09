@@ -65,15 +65,21 @@ body {
     header {       
 
       .en {
-        border: solid 2px white;
+        // border: solid 2px white;
+        border: solid 2px;
+        border: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
         float: right;
         padding: 3px;
         margin: 50px;
         text-decoration: none;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+
       }
 
       .jp {
         @include en;
+        border: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
       }
 
           .welcome {
@@ -116,112 +122,67 @@ body {
       padding-top: 200px;
       padding-left: 5%;
       font-size: 36px;
+      text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      animation: blink 12s infinite;
+      -webkit-animation: blink 12s infinite;
     }
 
     .card01 {
-      padding-top: 150px;
-      padding-bottom: 150px;
-      width: 80%;
-      height: auto;
-      background-color: whitesmoke;
-      margin: 100px auto 100px;
-      box-shadow: 5px 5px grey;
-      text-align: center;
-      // text-align: left;
+      @include card;
 
         h3 {
-          color: black;
-          padding-bottom: 50px;
+          @include h3;
         }
 
         .icon {
-          width: 250px;
-          height: auto;
-          padding-bottom: 50px;
+          @include icon;
         }
 
         ul {
-          // margin: 0 auto;
           text-align: left;
 
             li {
-              color: black;
-              line-height: 60px;
-              text-align: left;
-              padding-left: 10%;
-              padding-right: 3%;
+              @include li;
             }
         }
     }
 
     .card02 {
-      padding-top: 150px;
-      padding-bottom: 150px;
-      width: 80%;
-      height: auto;
-      background-color: whitesmoke;
-      margin: 100px auto 100px;
-      box-shadow: 5px 5px grey;
-      text-align: center;
-      // text-align: left;
+      @include card;
 
         h3 {
-          color: black;
-          padding-bottom: 50px;
+          @include h3;
         }
 
         .icon {
-          width: 250px;
-          height: auto;
-          padding-bottom: 50px;
+          @include icon;
         }
 
         ul {
-          // margin: 0 auto;
           text-align: left;
 
             li {
-              color: black;
-              line-height: 60px;
-              text-align: left;
-              padding-left: 10%;
-              padding-right: 3%;
+              @include li;
             }
         }
     }
 
     .card03 {
-      padding-top: 150px;
-      padding-bottom: 150px;
-      width: 80%;
-      height: auto;
-      background-color: whitesmoke;
-      margin: 100px auto 100px;
-      box-shadow: 5px 5px grey;
-      text-align: center;
-      // text-align: left;
+      @include card;
 
         h3 {
-          color: black;
-          padding-bottom: 50px;
+          @include h3;
         }
 
         .icon {
-          width: 250px;
-          height: auto;
-          padding-bottom: 50px;
+          @include icon;
         }
 
         ul {
-          // margin: 0 auto;
           text-align: left;
 
             li {
-              color: black;
-              line-height: 60px;
-              text-align: left;
-              padding-left: 10%;
-              padding-right: 3%;
+              @include li;
             }
         }
     }
@@ -229,48 +190,60 @@ body {
     .card04 {
       @include card;
 
-      // h3 {
-      //   // @include h3;
-      // }
-
         .profile {
           @include li;
           padding-bottom: 100px;
         }
 
         ul {
+          display: block;
 
-      
+          // .yoko {
+          //     float: left;
 
-            li {
-              @include li;
-              text-align: center;
-              line-height: 100px;
-              padding-right: 0;
-              padding-left: 0;
+          figcaption {
+            color: black;
+          }
 
-            }
-            .icon_sm {
-              width: 100px;
-              height: auto;
-              padding-bottom: 50px;
-            }
+              li {
+                @include li;
+                text-align: center;
+                line-height: 100px;
+                padding-right: 0;
+                padding-left: 0;
+              }
 
-            .html5 {
-              padding-bottom: 0;
+              .icon_sm {
+                width: 100px;
+                height: auto;
+                padding-bottom: 50px;
+              }
+
+              .html5 {
+                padding-bottom: 0;
+              }
+
             }
 
             .attribution {
               color: black;
             }
-        }
+        // }
     }
 
     .card05 {
-      @include card;
-      background-image: url("bgd_img.png");
-      background-repeat: repeat;
-      padding-bottom: 150px;
+      width: 80%;
+      height: auto;
+      margin: 100px auto 100px;
+      text-align: center;
+      background: black;
+      background: #222;
+      background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 7px,
+      rgba(0, 0, 0, 0.8) 9px,
+      rgba(0, 0, 0, 0.8) 13px,
+      transparent 13px );
 
         .frame {
           width: 90%;
@@ -279,7 +252,6 @@ body {
 
         .plate {
           padding-top: 30px;
-          // padding-left: 5%;
           padding-bottom: 100px;
           width: 60%;
         }
@@ -380,30 +352,60 @@ body {
           } 
         }
 
+        .card04 {
+          @include card;
+          overflow: hidden;
+    
+            .profile {
+              @include li;
+              padding-bottom: 100px;
+            }
+    
+            // ul {
+              // display: none;
+              
+              figure.gazo-box {
+                float: left;
+                padding-right: 19px;
+                padding-left: 19px;
+                justify-content: space-between;
+                
+
+                  figcaption {
+                    color: black;
+                  }
+                
+                  .icon_sm {
+                    width: 100px;
+                    height: auto;
+                    padding-bottom: 50px;
+                  } 
+                }
+    
+            }     
+        }
+    
+
         .card06 {
-            dl {
-              // padding-top: 0;
-              width: 50%;
-              margin: 0;
-            }
+                dl {
+                  // padding-top: 0;
+                  width: 50%;
+                  margin: 0;
+                }
 
-            .design {
-              margin-top: 100px;
-              margin-right: 50px;
-              margin-bottom: 100px;
-              margin-left: 100px;
+                .design {
+                  margin-top: 100px;
+                  margin-right: 50px;
+                  margin-bottom: 100px;
+                  margin-left: 100px;
+                }
 
-              // dt, dd {
-              //   font-size: 18px;
-              // }
-            }
-
-            .cording {
-              margin-top: 100px;
-              margin-right: 100px;
-              margin-bottom: 100px;
-              margin-left: 50px;
-            } 
+                .cording {
+                  margin-top: 100px;
+                  margin-right: 100px;
+                  margin-bottom: 100px;
+                  margin-left: 50px;
+                } 
         }
     }
-}
+

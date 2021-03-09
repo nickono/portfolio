@@ -71,11 +71,13 @@ body {
 }
 
 body header .en {
-  border: solid 2px white;
+  border: solid 2px;
+  border: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
   float: right;
   padding: 3px;
   margin: 50px;
   text-decoration: none;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
 }
 
 body header .jp {
@@ -84,6 +86,8 @@ body header .jp {
   padding: 3px;
   margin: 50px;
   text-decoration: none;
+  border: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
 }
 
 body header .welcome {
@@ -121,6 +125,9 @@ body h2 {
   padding-top: 200px;
   padding-left: 5%;
   font-size: 36px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
 }
 
 body .card01 {
@@ -154,8 +161,8 @@ body .card01 ul li {
   color: black;
   line-height: 60px;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 body .card02 {
@@ -189,8 +196,8 @@ body .card02 ul li {
   color: black;
   line-height: 60px;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 body .card03 {
@@ -224,13 +231,13 @@ body .card03 ul li {
   color: black;
   line-height: 60px;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 body .card04 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   width: 80%;
   height: auto;
   background-color: whitesmoke;
@@ -247,6 +254,14 @@ body .card04 .profile {
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 100px;
+}
+
+body .card04 ul {
+  display: block;
+}
+
+body .card04 ul figcaption {
+  color: black;
 }
 
 body .card04 ul li {
@@ -271,23 +286,18 @@ body .card04 ul .html5 {
   padding-bottom: 0;
 }
 
-body .card04 ul .attribution {
+body .card04 .attribution {
   color: black;
 }
 
 body .card05 {
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 80%;
   height: auto;
-  background-color: whitesmoke;
   margin: 100px auto 100px;
-  -webkit-box-shadow: 5px 5px grey;
-          box-shadow: 5px 5px grey;
   text-align: center;
-  background-image: url("bgd_img.png");
-  background-repeat: repeat;
-  padding-bottom: 150px;
+  background: black;
+  background: #222;
+  background-image: repeating-linear-gradient(to bottom, transparent 7px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 13px, transparent 13px);
 }
 
 body .card05 .frame {
@@ -320,8 +330,8 @@ body .affili .affiliation {
 }
 
 body .card06 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   width: 80%;
   height: auto;
   background-color: whitesmoke;
@@ -394,17 +404,53 @@ body .google_form {
     font-size: 18px;
     list-style: disc;
   }
-  body .card06 dl {
+  body .card04 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 80%;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 100px auto 100px;
+    -webkit-box-shadow: 5px 5px grey;
+            box-shadow: 5px 5px grey;
+    text-align: center;
+    overflow: hidden;
+  }
+  body .card04 .profile {
+    color: black;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 100px;
+  }
+  body .card04 figure.gazo-box {
+    float: left;
+    padding-right: 19px;
+    padding-left: 19px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .card04 figure.gazo-box figcaption {
+    color: black;
+  }
+  body .card04 figure.gazo-box .icon_sm {
+    width: 100px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .card06 dl {
     width: 50%;
     margin: 0;
   }
-  body .card06 .design {
+  .card06 .design {
     margin-top: 100px;
     margin-right: 50px;
     margin-bottom: 100px;
     margin-left: 100px;
   }
-  body .card06 .cording {
+  .card06 .cording {
     margin-top: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
